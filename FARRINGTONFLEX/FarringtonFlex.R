@@ -1,4 +1,39 @@
+## ############################################################################
+##
+## DISCLAIMER: 
+## This script has been developed for research purposes only. 
+## The script is provided without any warranty of any kind, either express or 
+## implied. The entire risk arising out of the use or performance of the sample
+## script and documentation remains with you. 
+## In no event shall its author, or anyone else involved in the 
+## creation, production, or delivery of the script be liable for any damages 
+## whatsoever (including, without limitation, damages for loss of business 
+## profits, business interruption, loss of business information, or other 
+## pecuniary loss) arising out of the use of or inability to use the sample
+## scripts or documentation, even if the author has been advised of the
+## possibility of such damages. 
+##
+## ############################################################################
+##
+## DESCRIPTION
+## Simulates outbreaks and analyses them using Farrington Flexible
+##
+##
+## Written by: Angela Noufaily
+## For any problems with this code, please contact f.colon@uea.ac.uk
+## 
+## ############################################################################
+
+# Delete objects in environment
 rm(list=ls(all=TRUE))
+
+# Load packages
+require(data.table)
+require(dplyr)
+require(tidyr)
+require(surveillance)
+require(lubridate)
+require(zoo)
 
 # FUNCTIONS THAT PRODUCE THE DATA
 # DEFINING FUNCTION h
